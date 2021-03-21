@@ -2,6 +2,10 @@ body {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
 }
 
 .grid-container {
@@ -14,74 +18,89 @@ body {
 .wrapper {}
 
 .header {
-    background-color: aqua;
     grid-area: header;
-}
-
-.first-two {
     display: flex;
-    width: 10%;
-}
-
-.last-four {
-    display: flex;
-    text-align: right;
+    color: #70757a;
+    font-weight: bold;
 }
 
 .top-nav-container {
-    background-color: blue;
-    min-width: 100%;
+    flex-grow: 1;
 }
 
 .top-nav-list {
-    background-color: blueviolet;
     display: flex;
     list-style: none;
-    width: 100%;
 }
 
 .top-nav-list-item {
-    background-color: brown;
     padding: 10px;
 }
 
-li :nth-child(3) {}
+.top-nav-list li:first-child {
+    margin-left: -40px;
+}
+
+.top-nav-list li:nth-child(3) {
+    margin-left: auto;
+}
 
 .main {
-    background-color: gold;
     grid-area: main;
     text-align: center;
 }
 
 .google-logo {
-    background-color: green;
+    margin-top: 7%;
 }
 
 .search-bar {
-    background-color: red;
+    background-color: white;
+    margin: 30px 0 10px 0;
+    width: 60%;
+    border-radius: 20px;
+    height: 37px;
+    outline: none;
+    border: 1px solid rgb(212, 211, 211);
+    ;
 }
 
-.search-bar-btn {
-    background-color: pink;
+.search-bar-btn,
+.lucky-btn {
+    padding: 5px 25px;
+    margin: 10px 5px
 }
-
-.lucky-btn {}
 
 .footer {
-    background-color: lightslategray;
     grid-area: footer;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .bottom-nav-container {
-    background-color: black;
+    flex-grow: 1;
+    color: gray
 }
 
 .bottom-nav-list {
-    background-color: gray;
     display: flex;
     list-style: none;
 }
 
 .bottom-nav-list-item {
-    background-color: lightgreen;
+    padding: 0 10px;
+}
+
+.bottom-nav-list li:nth-child(5) {
+    margin-left: auto;
+}
+
+.bottom-nav-list li:nth-child(4) {
+    margin-left: auto;
+}
+
+.bottom-nav-list li:first-child {
+    margin-left: -40px;
 }
